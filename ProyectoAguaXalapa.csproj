@@ -69,6 +69,9 @@
     <Compile Include="Views\VentanaConsultaColonias.xaml.cs">
       <DependentUpon>VentanaConsultaColonias.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\VentanaInicio.xaml.cs">
+      <DependentUpon>VentanaInicio.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\VetnanaPipas.xaml.cs">
       <DependentUpon>VetnanaPipas.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,10 @@
     <Page Include="Views\VentanaConsultaColonias.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VentanaInicio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\VetnanaPipas.xaml">
       <SubType>Designer</SubType>
@@ -119,6 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fondoAgua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.5.1.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.5.1.0\build\MaterialDesignThemes.targets')" />
