@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoAguaXalapa"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Pipas" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         
+        <Label Content="Pipas" FontSize="20" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="0"/>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1">
+            <Button Content="Regresar" Margin="10" Background="Red" Foreground="White" FontSize="20" FontFamily="Roboto"/>
+            <Button Content="Solicitar pipa de agua" Margin="10" Background="CadetBlue" FontSize="20"/>
+        </StackPanel>
+        
+        <DataGrid Grid.Row="2" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Proveedor" Binding="{Binding Proveedor}" MinWidth="300"/>
+                <DataGridTextColumn Header="Capacidad" Binding="{Binding Capacidad}" MinWidth="250"/>
+                <DataGridTextColumn Header="Precio" Binding="{Binding Precio}" MinWidth="250"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

@@ -66,6 +66,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Views\VentanaConsultaColonias.xaml.cs">
+      <DependentUpon>VentanaConsultaColonias.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\VetnanaPipas.xaml.cs">
       <DependentUpon>VetnanaPipas.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\VentanaConsultaColonias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\VetnanaPipas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
