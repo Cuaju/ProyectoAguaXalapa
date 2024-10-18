@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace ProyectoAguaXalapa.Views
 {
     /// <summary>
-    /// Lógica de interacción para VentanaInicio.xaml
+    /// Lógica de interacción para VentanaInicioDeSesion.xaml
     /// </summary>
-    public partial class VentanaInicio : Page
+    public partial class VentanaInicioDeSesion : Page
     {
-        public VentanaInicio()
+        public VentanaInicioDeSesion()
         {
             InitializeComponent();
-        }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
         }
     }
 }

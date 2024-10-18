@@ -1,0 +1,103 @@
+﻿<Page x:Class="ProyectoAguaXalapa.Views.VentanaInicioDeSesion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="VentanaInicioDeSesion">
+
+    <Grid>
+        <Border RenderTransformOrigin="0.586,0.526">
+            <Border.Background>
+                <ImageBrush ImageSource="/Images/fondoAgua.png" Stretch="UniformToFill" />
+            </Border.Background>
+
+            <Grid Margin="20">
+                <!-- Título de Inicio de Sesión -->
+                <Label Content="Inicio De Sesión"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontSize="36"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Background="#39337B"
+                       Margin="0,10,0,0"/>
+
+                <!-- Campos de Correo y Contraseña -->
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,80,0,0" Width="450">
+
+                    <!-- Correo -->
+                    <StackPanel Orientation="Horizontal" Margin="0,10">
+                        <Label Content="Correo:" 
+                               Width="150" 
+                               Foreground="LightBlue" 
+                               Background="#39337B"
+                               FontSize="16" 
+                               VerticalAlignment="Center" />
+                        <TextBox Width="300" Text="ejemplo@gmail.com" />
+                    </StackPanel>
+
+                    <!-- Contraseña -->
+                    <StackPanel Orientation="Horizontal" Margin="0,10">
+                        <Label Content="Contraseña:" 
+                               Width="150" 
+                               Foreground="LightBlue" 
+                               Background="#39337B"
+                               FontSize="16" 
+                               VerticalAlignment="Center" />
+                        <PasswordBox Width="300" />
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Botones Aceptar y Cancelar -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,20">
+                    <Button Content="Aceptar"
+                            Width="120" 
+                            Height="40" 
+                            Background="LimeGreen"
+                            Foreground="White" 
+                            FontWeight="Bold" 
+                            FontSize="20"
+                            Margin="20,0"/>
+                    <Button Content="Cancelar"
+                            Width="120" 
+                            Height="40" 
+                            Background="Crimson"
+                            Foreground="White" 
+                            FontWeight="Bold" 
+                            FontSize="20"
+                            Margin="20,0"/>
+                </StackPanel>
+
+                <Image x:Name="Logo"  
+                       Source="/Images/logo.png"
+                       Width="176" Height="142"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Margin="178,218,0,0"
+                       RenderTransformOrigin="0.5,0.5"
+                       Panel.ZIndex="1"/>
+
+                <Image x:Name="arbol"  
+                       Source="/Images/arbol.png"
+                       Width="106" Height="133"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       Margin="0,167,0,0"
+                       RenderTransformOrigin="0.5,0.5"
+                       Panel.ZIndex="1"/>
+
+                <Image x:Name="montania"  
+                       Source="/Images/montania.png"
+                       Width="289" Height="261"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Margin="402,188,0,0"
+                       RenderTransformOrigin="0.5,0.5"
+                       Panel.ZIndex="1"/>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
